@@ -88,6 +88,5 @@ example's ignored `output/` directory.
 
 ## License
 
-The component licenses are preserved: [racing is MIT](racing/LICENSE) and
-[drone is LGPL-2.1](drone/LICENSE). Third-party assets retain their bundled licenses;
-see [racing attribution](racing/docs/attribution.md) and `drone/web_demo/vendor/`.
+This project is licensed under the [MIT License](LICENSE).
+Third-party assets retain their bundled licenses.
