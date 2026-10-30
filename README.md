@@ -5,7 +5,7 @@ by Kaleb Ben Naveed, Manveer Singh, Devansh R. Agrawal, and Dimitra Panagou.
 
 [Paper](https://arxiv.org/abs/2604.15507) · [Project page](https://kalebbennaveed.github.io/dual-gtk/) · [Video](https://youtu.be/l-pxMYxoITU) · [Racing demo](https://kalebbennaveed.github.io/dual-gtk-carracing/) · [Drone demo](https://kalebbennaveed.github.io/dual-gtk-drone/)
 
-<a href="https://youtu.be/l-pxMYxoITU"><img src="docs/media/dual-gatekeeper.gif" width="320" alt="Autonomous racing and drone navigation animations"></a>
+<a href="https://youtu.be/l-pxMYxoITU"><img src="docs/media/dual-gatekeeper.gif" width="800" alt="Autonomous racing and drone navigation animations, side by side"></a>
 
 Dual-gatekeeper selects informative trajectories subject to safety verification
 and an exploration budget. The racing example uses sampled probabilistic safety
