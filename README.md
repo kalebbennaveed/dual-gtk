@@ -28,8 +28,6 @@ git clone https://github.com/kalebbennaveed/dual-gtk.git
 cd dual-gtk
 ```
 
-The two examples have separate environments and lockfiles. No ROS or GPU is required.
-
 ## Autonomous racing
 
 From the repository root, run a short simulation, audit it, and build its browser replay:
@@ -56,13 +54,6 @@ From the repository root, simulate the proposed method on the spatial obstacle c
 cd drone
 uv sync --locked --group dev
 uv run --locked python -m scripts.run_simulation --scenario spatial_learning_course --method proposed --true-drag 0.4 --seed 17 --disturbance-profile constant_positive --output output/example
-```
-
-To view the three included reference runs without rerunning the optimizations:
-
-```bash
-uv run --locked python -m scripts.build_web_demo --output output/web
-uv run --locked python -m http.server 8878 --bind 127.0.0.1 --directory output/web
 ```
 
 ## Code structure
