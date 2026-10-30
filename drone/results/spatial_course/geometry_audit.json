@@ -1,0 +1,105 @@
+{
+  "scenario": "spatial_learning_course",
+  "methods": [
+    {
+      "method": "proposed",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.03274486976710031,
+      "minimum_nominal_swept_clearance": 0.05802813134631454,
+      "nominal_z_range": [
+        0.8,
+        2.746857648295678
+      ],
+      "actual_z_range": [
+        0.8,
+        2.7719961023142288
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 1.0668464226939882,
+      "actual_path_length": 23.05732474666545,
+      "altitude_over_low_wall": [
+        2.5857299532494005,
+        2.6086514525671287
+      ],
+      "altitude_under_overhead_wall": [
+        1.610434173130164,
+        1.639977124112167
+      ]
+    },
+    {
+      "method": "passive",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.03892653095619267,
+      "minimum_nominal_swept_clearance": 0.0636972966958686,
+      "nominal_z_range": [
+        0.8,
+        2.770240094986104
+      ],
+      "actual_z_range": [
+        0.8,
+        2.7961497918946314
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 1.0296773627824332,
+      "actual_path_length": 22.719294901915863,
+      "altitude_over_low_wall": [
+        2.58678749977446,
+        2.6196454000495235
+      ],
+      "altitude_under_overhead_wall": [
+        1.6133073225892682,
+        1.631642890803622
+      ]
+    },
+    {
+      "method": "weighted",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.2482432303513241,
+      "minimum_nominal_swept_clearance": 0.22509510724870826,
+      "nominal_z_range": [
+        0.6564186830175927,
+        3.3768080595230563
+      ],
+      "actual_z_range": [
+        0.6824806077524813,
+        3.391827832681886
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 2.737455520925356,
+      "actual_path_length": 27.776471052792637,
+      "altitude_over_low_wall": [
+        2.98186311609082,
+        3.301917685242747
+      ],
+      "altitude_under_overhead_wall": [
+        0.6985270572599409,
+        1.1003269731868521
+      ]
+    },
+    {
+      "method": "robust",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.10457384401891709,
+      "minimum_nominal_swept_clearance": 0.11411712849107952,
+      "nominal_z_range": [
+        0.8,
+        2.707146027554141
+      ],
+      "actual_z_range": [
+        0.8,
+        2.728182083815157
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 0.9012028750948842,
+      "actual_path_length": 22.61284816244836,
+      "altitude_over_low_wall": [
+        2.6937384264402935,
+        2.710194708051154
+      ],
+      "altitude_under_overhead_wall": [
+        1.5096156183970786,
+        1.5835064014515332
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+[project]
+name = "drone-dual-gatekeeper"
+version = "0.1.0"
+description = "Constant-bandwidth dynamic tube MPC and budgeted scalar-drag exploration"
+requires-python = ">=3.12,<3.14"
+dependencies = ["numpy>=2.0", "scipy>=1.14", "casadi>=3.7", "meshcat>=0.3.2", "matplotlib>=3.9", "PyYAML>=6.0"]
+[dependency-groups]
+dev = ["pytest>=8.0"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

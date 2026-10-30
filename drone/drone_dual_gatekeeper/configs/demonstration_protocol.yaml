@@ -1,0 +1,7 @@
+scenario: informative_demo
+seed: 17
+true_drag_coefficient: 0.4
+disturbance_profile: constant_positive
+measurement_width_target: 0.05
+excitation_ablation_seeds: [17, 23, 41, 57, 101]
+purpose: Designed mechanism demonstration; no general superiority claim.

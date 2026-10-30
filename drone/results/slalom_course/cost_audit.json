@@ -1,0 +1,18 @@
+[
+  {
+    "method": "proposed",
+    "independently_integrated_cost": 87.37800390431775
+  },
+  {
+    "method": "passive",
+    "independently_integrated_cost": 88.5593037592664
+  },
+  {
+    "method": "weighted",
+    "independently_integrated_cost": 91.50653868345364
+  },
+  {
+    "method": "robust",
+    "independently_integrated_cost": 113.19311626210641
+  }
+]

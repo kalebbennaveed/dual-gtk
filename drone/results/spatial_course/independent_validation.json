@@ -1,0 +1,107 @@
+{
+  "audited_runs": 4,
+  "audits": [
+    {
+      "scenario": "spatial_learning_course",
+      "method": "passive",
+      "epochs_checked": 6,
+      "samples_checked": 589
+    },
+    {
+      "scenario": "spatial_learning_course",
+      "method": "proposed",
+      "epochs_checked": 6,
+      "samples_checked": 583
+    },
+    {
+      "scenario": "spatial_learning_course",
+      "method": "robust",
+      "epochs_checked": 8,
+      "samples_checked": 801
+    },
+    {
+      "scenario": "spatial_learning_course",
+      "method": "weighted",
+      "epochs_checked": 6,
+      "samples_checked": 599
+    }
+  ],
+  "refinement": [
+    {
+      "scenario": "spatial_learning_course",
+      "method": "passive",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 1.9999999999999998,
+      "endpoint_max_abs_errors_vs_finest": [
+        7.570426214464909e-05,
+        2.566814671345341e-05
+      ],
+      "maximum_tube_utilizations": [
+        0.45612730143169433,
+        0.45592020028077485,
+        0.455817479099464
+      ]
+    },
+    {
+      "scenario": "spatial_learning_course",
+      "method": "proposed",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 1.9999999999999998,
+      "endpoint_max_abs_errors_vs_finest": [
+        0.000484286443236448,
+        0.00022943358993154916
+      ],
+      "maximum_tube_utilizations": [
+        0.5390280980484349,
+        0.537285606189266,
+        0.5365946437044691
+      ]
+    },
+    {
+      "scenario": "spatial_learning_course",
+      "method": "robust",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 1.9999999999999998,
+      "endpoint_max_abs_errors_vs_finest": [
+        7.570426214464909e-05,
+        2.566814671345341e-05
+      ],
+      "maximum_tube_utilizations": [
+        0.45612730143169433,
+        0.45592020028077485,
+        0.455817479099464
+      ]
+    },
+    {
+      "scenario": "spatial_learning_course",
+      "method": "weighted",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 1.9999999999999998,
+      "endpoint_max_abs_errors_vs_finest": [
+        7.557328810481323e-05,
+        2.562192004762487e-05
+      ],
+      "maximum_tube_utilizations": [
+        0.46334276070788966,
+        0.46315663896789955,
+        0.4630656007686386
+      ]
+    }
+  ]
+}

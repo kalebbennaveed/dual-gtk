@@ -1,0 +1,107 @@
+{
+  "audited_runs": 4,
+  "audits": [
+    {
+      "scenario": "informative_demo",
+      "method": "passive",
+      "epochs_checked": 3,
+      "samples_checked": 540
+    },
+    {
+      "scenario": "informative_demo",
+      "method": "proposed",
+      "epochs_checked": 3,
+      "samples_checked": 499
+    },
+    {
+      "scenario": "informative_demo",
+      "method": "robust",
+      "epochs_checked": 5,
+      "samples_checked": 935
+    },
+    {
+      "scenario": "informative_demo",
+      "method": "weighted",
+      "epochs_checked": 4,
+      "samples_checked": 700
+    }
+  ],
+  "refinement": [
+    {
+      "scenario": "informative_demo",
+      "method": "passive",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 4.0,
+      "endpoint_max_abs_errors_vs_finest": [
+        6.071561848064455e-05,
+        2.0228841747904625e-05
+      ],
+      "maximum_tube_utilizations": [
+        0.645931650689348,
+        0.6459179008284841,
+        0.6459122844495881
+      ]
+    },
+    {
+      "scenario": "informative_demo",
+      "method": "proposed",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 4.0,
+      "endpoint_max_abs_errors_vs_finest": [
+        0.000410609688719088,
+        5.53918880279447e-05
+      ],
+      "maximum_tube_utilizations": [
+        0.6552606695914227,
+        0.6550906932289311,
+        0.6551054008432803
+      ]
+    },
+    {
+      "scenario": "informative_demo",
+      "method": "robust",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 4.0,
+      "endpoint_max_abs_errors_vs_finest": [
+        6.071561848064455e-05,
+        2.0228841747904625e-05
+      ],
+      "maximum_tube_utilizations": [
+        0.645931650689348,
+        0.6459179008284841,
+        0.6459122844495881
+      ]
+    },
+    {
+      "scenario": "informative_demo",
+      "method": "weighted",
+      "steps": [
+        0.02,
+        0.01,
+        0.005
+      ],
+      "duration": 4.0,
+      "endpoint_max_abs_errors_vs_finest": [
+        6.0712074045898845e-05,
+        2.0227680877393794e-05
+      ],
+      "maximum_tube_utilizations": [
+        0.639024324410842,
+        0.6389974619275745,
+        0.6389843799927822
+      ]
+    }
+  ]
+}

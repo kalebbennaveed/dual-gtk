@@ -1,0 +1,7 @@
+name: no_benefit
+start: [0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+goal: [3.0, 0.0, 1.0]
+lower: [-2.0, -3.0, 0.2]
+upper: [5.0, 3.0, 3.0]
+description: "Short open mission: no downstream passage whose feasibility learning can improve. Same cost, controller and budget as other scenarios."
+obstacles: []

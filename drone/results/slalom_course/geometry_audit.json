@@ -1,0 +1,129 @@
+{
+  "scenario": "slalom_course",
+  "methods": [
+    {
+      "method": "proposed",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.052272171992464894,
+      "minimum_nominal_swept_clearance": 0.05628495512780107,
+      "nominal_z_range": [
+        1.0,
+        3.1520475806775803
+      ],
+      "actual_z_range": [
+        1.0,
+        3.152138596775748
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 0.7236745252861335,
+      "actual_path_length": 22.984953980227473,
+      "lateral_barrier_crossings": [
+        [
+          0.6787198902696494,
+          0.7236745252861335
+        ],
+        [
+          -0.7225193113535825,
+          -0.6558328606740896
+        ],
+        [
+          0.6711355602204773,
+          0.7008812229508415
+        ]
+      ]
+    },
+    {
+      "method": "passive",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.04491579526629624,
+      "minimum_nominal_swept_clearance": 0.0616469820740915,
+      "nominal_z_range": [
+        1.0,
+        3.1576154342383425
+      ],
+      "actual_z_range": [
+        1.0,
+        3.1832119283722338
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 0.7331111511582243,
+      "actual_path_length": 22.802857207548044,
+      "lateral_barrier_crossings": [
+        [
+          0.709025846757963,
+          0.7331111511582243
+        ],
+        [
+          -0.6826700837275315,
+          -0.6522296876459976
+        ],
+        [
+          0.6839871794588516,
+          0.7138692165330208
+        ]
+      ]
+    },
+    {
+      "method": "weighted",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.1072764716356003,
+      "minimum_nominal_swept_clearance": 0.09261802058603166,
+      "nominal_z_range": [
+        1.0,
+        4.456252028040874
+      ],
+      "actual_z_range": [
+        1.0,
+        4.4760878760338265
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 1.6700633985054527,
+      "actual_path_length": 26.849488446191046,
+      "lateral_barrier_crossings": [
+        [
+          0.7094731989223545,
+          0.735913340212402
+        ],
+        [
+          -1.1838775596335862,
+          -0.8661111214656624
+        ],
+        [
+          1.3644486021179343,
+          1.6694566483313906
+        ]
+      ]
+    },
+    {
+      "method": "robust",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.12188734177859764,
+      "minimum_nominal_swept_clearance": 0.0989207220715381,
+      "nominal_z_range": [
+        1.0,
+        3.112018161157496
+      ],
+      "actual_z_range": [
+        1.0,
+        3.140516615274858
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 0.8712606826852527,
+      "actual_path_length": 22.75856793206825,
+      "lateral_barrier_crossings": [
+        [
+          0.7222919168378076,
+          0.7463411804080181
+        ],
+        [
+          -0.8011903871977545,
+          -0.7291016005623913
+        ],
+        [
+          0.7778403881854548,
+          0.8702889140221942
+        ]
+      ]
+    }
+  ]
+}

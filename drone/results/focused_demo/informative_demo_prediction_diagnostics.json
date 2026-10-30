@@ -1,0 +1,6 @@
+{
+  "scenario": "informative_demo",
+  "prediction_bias": -0.05849017458577627,
+  "prediction_mean_absolute_error": 0.05849017458577627,
+  "segments": 10
+}

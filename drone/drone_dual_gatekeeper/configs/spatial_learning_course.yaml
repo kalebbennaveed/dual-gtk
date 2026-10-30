@@ -1,0 +1,26 @@
+name: spatial_learning_course
+start: [0.0, -1.3, 0.8, 0.0, 0.0, 0.0]
+goal: [22.0, 1.3, 2.8]
+lower: [-3.0, -4.0, 0.25]
+upper: [25.0, 4.0, 4.5]
+description: "An open launch region followed by a low wall, an overhead wall and staggered tall columns. Obstacle geometry requires rise, descent and lateral turns; start and goal have different heights. Free x/y/z trajectory optimization without prescribed waypoints."
+obstacles:
+  - {kind: box, lower: [7.5, -4.0, 0.25], upper: [8.5, 4.0, 2.4]}
+  - {kind: box, lower: [12.5, -4.0, 1.8], upper: [13.5, 4.0, 4.5]}
+  - {kind: cylinder, center: [16.0, 0.0, 2.375], radius: 1.2, height: 4.25}
+  - {kind: cylinder, center: [19.0, 2.5, 2.375], radius: 1.0, height: 4.25}
+overrides:
+  control_points: 14
+  subdivisions: 3
+  nominal_altitude: null
+  solver_iterations: 1000
+  solver_hessian_approximation: limited-memory
+  informative_solver_iterations: 1000
+  informative_hessian_approximation: limited-memory
+  disturbance_bound: 0.12
+  eta: 0.06
+  initial_interval: [0.0, 1.0]
+  measurement_noise: 0.002
+  mission_position_weight: 0.03
+  informative_gamma: 20.0
+  minimum_information_advantage: 0.01

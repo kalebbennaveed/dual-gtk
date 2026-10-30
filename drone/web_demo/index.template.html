@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dual Gatekeeper Drone · Scenario __SCENARIO_NUMBER__</title>
+<script>if(/^https?:$/.test(location.protocol)&&location.pathname.endsWith('/index.html'))history.replaceState(null,'',location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<style>
+__STYLES__
+</style>
+</head>
+<body>
+<header><h1>Dual Gatekeeper Drone</h1><label class="sr-only">Scenario <select id="scenario-select" aria-label="Demo scenario"><option value="informative_demo">Scenario 1</option><option value="spatial_learning_course">Scenario 2</option><option value="slalom_course">Scenario 3</option></select></label>
+<div class="scenario-previews" aria-label="Choose a scenario">__SCENARIO_PREVIEWS__</div>
+<p id="scenario-description">Recorded simulations of four planning methods.</p>
+<nav role="tablist" aria-label="Simulation method">
+<button role="tab" id="tab-proposed" aria-controls="demo-panel" data-method="proposed" style="--accent:#159c75" aria-selected="true">Proposed</button>
+<button role="tab" id="tab-passive" aria-controls="demo-panel" data-method="passive" style="--accent:#326bd1" aria-selected="false" tabindex="-1">Passive</button>
+<button role="tab" id="tab-weighted" aria-controls="demo-panel" data-method="weighted" style="--accent:#bb7b12" aria-selected="false" tabindex="-1">Weighted info gain</button>
+<button role="tab" id="tab-robust" aria-controls="demo-panel" data-method="robust" style="--accent:#8654ba" aria-selected="false" tabindex="-1">No learning · robust</button>
+<button role="tab" id="tab-comparison" aria-controls="demo-panel" data-method="comparison" style="--accent:#223a59" aria-selected="false" tabindex="-1">Comparison · overlay</button>
+</nav></header>
+<div class="toolbar"><button id="play" aria-label="Play animation">Play</button><button id="reset">Reset</button><span id="clock" class="time">0.00 / 20.0 s</span><input id="timeline" type="range" min="0" max="20" step="0.02" value="0" aria-label="Simulation time"><label for="speed">Speed</label><select id="speed"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select><button id="learning">At learning · 4 s</button><button id="presentation" aria-pressed="false">Presentation view</button></div>
+<main id="demo-panel" role="tabpanel" aria-labelledby="tab-proposed">
+<div class="cards" id="cards" aria-label="Live method statistics"></div>
+<div class="workspace">
+<section class="panel"><div class="panel-heading"><strong id="scene-title">Proposed · nominal plans and flight</strong><span id="phase">Informative commitment · 0–4 s</span></div><div class="scene-wrap"><canvas id="scene" aria-label="Animated drone positions, nominal trajectories, obstacle passage and position tubes"></canvas><div id="drone-labels"></div><div id="closeup-label"></div><div class="scene-label" id="view-label">Top view · x/y in metres</div></div><div class="scene-options"><select id="motion" aria-label="Animated drone motion"><option value="nominal" selected>Animate nominal</option><option value="actual">Animate actual tracking</option></select><label><input id="plans" type="checkbox" checked>Nominal plans</label><label><input id="follow-camera" type="checkbox" checked>Follow drone (orbit + zoom)</label><label><input id="quad-closeup" type="checkbox" checked>Quad close-up</label><label><input id="safety-sphere" type="checkbox">Physical safety sphere</label><label><input id="tubes" type="checkbox" checked>Position tubes</label><label><input id="old-backup" type="checkbox" checked>Prior backup at learning</label><label><input id="early" type="checkbox">Early motion close-up</label><select id="view" aria-label="Camera view"><option value="oblique">3D orbit view</option><option value="top">Top view</option><option value="side">3D side perspective · altitude</option></select><button id="camera-reset">Reset camera</button><button id="inspect-passage">Inspect closest passage</button></div><div class="legend"><span><i class="swatch" style="--accent:#159c75"></i>Committed nominal</span><span><i class="swatch dashed"></i>Backup nominal</span><span><i class="swatch" style="--accent:#213248"></i>Executed trail · moving quadcopter</span><span><i class="swatch tube"></i>Position error box sweep</span></div></section>
+<section class="panel"><div class="panel-heading"><strong>Live plots</strong><span>Common simulation clock</span></div><div id="chart-legend" class="method-legend"></div><div class="plots">
+<div class="plot-wrap"><p class="plot-title">Drag coefficient bounds · shaded interval, true value = 0.4</p><canvas class="plot" id="bounds" aria-label="Live lower and upper uncertainty bounds"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">Interval width · logarithmic scale</p><canvas class="plot" id="width" aria-label="Live uncertainty width"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">Accumulated actual mission cost</p><canvas class="plot" id="cost" aria-label="Live actual mission cost"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">Speed · m/s</p><canvas class="plot" id="velocity" aria-label="Live drone speed"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">Applied input magnitude · m/s²</p><canvas class="plot" id="input" aria-label="Live applied input magnitude"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">Largest position tube radius · m</p><canvas class="plot" id="radius" aria-label="Live propagated position tube radius"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">Tube utilization · limit = 1</p><canvas class="plot" id="utilization" aria-label="Live actual tube utilization"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">x position · m (dashed = nominal)</p><canvas class="plot" id="x" aria-label="Actual and nominal x position"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">y position · m (dashed = nominal)</p><canvas class="plot" id="y" aria-label="Actual and nominal y position"></canvas></div>
+<div class="plot-wrap"><p class="plot-title">z altitude · m (dashed = nominal)</p><canvas class="plot" id="z" aria-label="Actual and nominal z altitude"></canvas></div>
+</div><p class="note">Arrival is the first recorded state within both the position and speed tolerances (0.02 s sampling). Curves stop at arrival. Drones then remain at their final positions. Uncertainty bands use the recorded identification updates; no learning keeps its original interval.</p></section>
+</div><div id="mechanism"></div>
+</main><p class="note" id="weighted-objective"></p>
+<footer>JavaScript animation of recorded, independently checked numerical simulations. Planning was performed offline; this webpage replays the results. The scene depicts sampled nominal position tubes, with the physical drone radius handled separately in the safety checks. These designed examples use bounded wind and bounded measurement noise; they are not a claim of a universal performance advantage.</footer>
+<script id="simulation-data" type="application/json">__SIMULATION_DATA__</script>
+<script type="importmap">__IMPORT_MAP__</script>
+<script type="module">
+__APP_SCRIPT__
+</script></body></html>

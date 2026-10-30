@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dual-gtk-drs-racing"
+version = "0.1.0"
+description = "Dual gatekeeper racing with bounded tire friction and Wasserstein safety checks"
+requires-python = ">=3.11,<3.14"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.12,<2", "numba>=0.61,<0.66", "matplotlib>=3.8,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+video = ["pybullet>=3.2.6", "imageio[ffmpeg]>=2.34", "pillow>=10"]
+
+[project.scripts]
+drs-racing = "dual_gtk_drs_racing.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["dual_gtk_drs_racing*"]
+
+[tool.setuptools.package-data]
+dual_gtk_drs_racing = ["assets/*", "web/*", "web/vendor/*", "web/vendor/loaders/*", "web/vendor/utils/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,94 @@
+{
+  "methods": [
+    {
+      "method": "proposed",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.09999999999996287,
+      "minimum_nominal_swept_clearance": 0.09999999999996331,
+      "nominal_z_range": [
+        0.4732517542351481,
+        1.048384225749873
+      ],
+      "actual_z_range": [
+        0.47665279166035074,
+        1.0696522487959823
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 0.023534824596407832,
+      "actual_path_length": 23.16186541521011
+    },
+    {
+      "method": "passive",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.0999999999999984,
+      "minimum_nominal_swept_clearance": 0.09999999999999928,
+      "nominal_z_range": [
+        0.8949912706226586,
+        1.2883826353463583
+      ],
+      "actual_z_range": [
+        0.9228321297821642,
+        1.3161898484390884
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 0.020303878728723364,
+      "actual_path_length": 22.671328068887373
+    },
+    {
+      "method": "weighted",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.19757565775559013,
+      "minimum_nominal_swept_clearance": 0.1975771937134808,
+      "nominal_z_range": [
+        0.25253683678184113,
+        2.9433639072056907
+      ],
+      "actual_z_range": [
+        0.28254530187577287,
+        2.9697747148465883
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 5.502018745506687,
+      "actual_path_length": 35.03137785480226
+    },
+    {
+      "method": "robust",
+      "physical_radius": 0.1,
+      "minimum_actual_swept_clearance": 0.0999999999999984,
+      "minimum_nominal_swept_clearance": 0.09999999999999795,
+      "nominal_z_range": [
+        0.7543104332519233,
+        1.370572783828036
+      ],
+      "actual_z_range": [
+        0.7746726325059233,
+        1.4034111716675657
+      ],
+      "nominal_altitude_constraint": null,
+      "maximum_xy_line_deviation": 2.763362727283444e-14,
+      "actual_path_length": 22.55975594684267
+    }
+  ],
+  "renderer": {
+    "collision_radius": 0.1,
+    "old_render_scale": 2.5,
+    "old_mesh_circumsphere_approx": 0.379,
+    "fixed_mesh_radius": 0.0995,
+    "fix": "All transformed mesh vertices fitted inside collision sphere; no enlarged glyphs."
+  },
+  "excitation": {
+    "selected_horizon": 4.0,
+    "solver_status": "Solved_To_Acceptable_Level",
+    "constraint_residual": 1.1220232382092021e-08,
+    "selected_score": 0.3080659796976919,
+    "safe_mirrored_plan": true,
+    "reconnects_to_mirrored_backup": true,
+    "reconnects_to_original_backup": true,
+    "active_cost": 56.58305966181268,
+    "mirror_cost": 56.58305966181268,
+    "active_gramian": 26.29189079517367,
+    "mirror_gramian": 26.29189079517367,
+    "backup_prefix_gramian": 16.12323792680037,
+    "interpretation": "Scalar-drag information proxy is integral ||v||^4. The side of the excursion is not uniquely required; mirrored x/y plans are equally safe and have identical objectives."
+  }
+}

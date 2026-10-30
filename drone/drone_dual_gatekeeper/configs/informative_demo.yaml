@@ -1,0 +1,58 @@
+name: informative_demo
+start:
+- 0.0
+- 0.0
+- 1.0
+- 0.0
+- 0.0
+- 0.0
+goal:
+- 16.0
+- 16.0
+- 1.0
+lower:
+- -3.0
+- -3.0
+- 0.2
+upper:
+- 19.0
+- 19.0
+- 3.0
+description: 'Designed demonstration: open region before a narrow diagonal passage,
+  scalar drag uncertainty, constant bounded wind, and noisy SMID velocity measurements.
+  Free x/y/z nominal planning with full 6D tracking; no prescribed altitude or route.'
+obstacles:
+- kind: cylinder
+  center:
+  - 6.090811690796322
+  - 9.909188309203678
+  - 1.5
+  radius: 2.5
+  height: 3.0
+- kind: cylinder
+  center:
+  - 9.909188309203678
+  - 6.090811690796322
+  - 1.5
+  radius: 2.5
+  height: 3.0
+overrides:
+  control_points: 8
+  candidate_increment: 4.0
+  subdivisions: 4
+  solver_iterations: 250
+  informative_gamma: 20.0
+  informative_solver_iterations: 1000
+  informative_hessian_approximation: limited-memory
+  weighted_gamma: 8.0
+  weighted_information_discount: 0.5
+  disturbance_bound: 0.12
+  eta: 0.06
+  smooth_max_width: 1.0e-05
+  smooth_abs_width: 1.0e-06
+  initial_interval:
+  - 0.0
+  - 1.0
+  nominal_altitude: null
+  measurement_noise: 0.002
+  mission_position_weight: 0.03

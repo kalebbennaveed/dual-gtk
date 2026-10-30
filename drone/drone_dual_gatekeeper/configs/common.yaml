@@ -1,0 +1,38 @@
+# Controller and simulator settings shared across the three scenarios.
+alpha: 2.0
+sliding_lambda: 2.0
+# DTMPC Table I gives lambda=2, eta=0.1, velocity limit=2.5, g=9.81.
+# Lower disturbance here tests reducible scalar drag rather than irreducible wind.
+disturbance_bound: 0.08
+eta: 0.1
+drone_radius: 0.1
+velocity_limit: 2.5
+input_limits: [15.0, 15.0, 25.0]
+gravity: [0.0, 0.0, -9.81]
+control_points: 8
+subdivisions: 3
+min_horizon: 2.0
+max_horizon: 45.0
+candidate_increment: 2.0
+mission_input_weight: 0.02
+mission_position_weight: 0.3
+information_epsilon: 0.000001
+informative_gamma: 8.0
+weighted_gamma: 2.0
+score_discount: 0.25
+exploration_budget_fraction: 0.1
+simulation_step: 0.02
+smid_window: 0.2
+measurement_noise: 0.0
+goal_tolerance: 0.22
+goal_velocity_tolerance: 0.4
+max_replans: 30
+solver_tolerance: 0.0000001
+solver_iterations: 150
+initial_interval: [0.0, 0.5]
+
+solver_acceptable_tolerance: 0.1
+smooth_max_width: 0.001
+smooth_abs_width: 0.0001
+excitation_seed_amplitudes: [0.7, 1.3]
+homotopy_seed_offset: 2.5
