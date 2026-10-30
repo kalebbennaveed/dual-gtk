@@ -1,8 +1,5 @@
 # Dual-gatekeeper
 
-Code for **Trajectory Planning for Safe Dual Control with Active Exploration**
-by Kaleb Ben Naveed, Manveer Singh, Devansh R. Agrawal, and Dimitra Panagou.
-
 [Paper](https://arxiv.org/abs/2604.15507) · [Project page](https://kalebbennaveed.github.io/dual-gtk/) · [Video](https://youtu.be/l-pxMYxoITU) · [Racing demo](https://kalebbennaveed.github.io/dual-gtk-carracing/) · [Drone demo](https://kalebbennaveed.github.io/dual-gtk-drone/)
 
 <p align="center">
@@ -46,8 +43,8 @@ uv run --locked drs-racing demo --input output/example --output output/web
 uv run --locked python -m http.server 8879 --bind 127.0.0.1 --directory output/web
 ```
 
-Open [localhost:8879](http://127.0.0.1:8879/). The first run also compiles the
-Numba kernels. Use `--seconds 120` for a lap, or `--method all` to compare the four
+The first run also compiles the Numba kernels. Use `--seconds 120` for a lap,
+or `--method all` to compare the four
 methods. See [racing/README.md](racing/README.md) for the two safety tolerances,
 weighted baselines, and experiment scripts.
 
@@ -67,9 +64,6 @@ To view the three included reference runs without rerunning the optimizations:
 uv run --locked python -m scripts.build_web_demo --output output/web
 uv run --locked python -m http.server 8878 --bind 127.0.0.1 --directory output/web
 ```
-
-Open [localhost:8878](http://127.0.0.1:8878/). See [drone/README.md](drone/README.md)
-to compare methods or regenerate the runs.
 
 ## Code structure
 
